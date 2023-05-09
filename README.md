@@ -1,2 +1,4 @@
 # Chr_DAntonio_WEB601Assignments_MyFavouriteMovies
-The Repository where I will keep all of my Assignments for WEB 601
+Christian D'Antonio
+
+For this project, I will simply showcase a selection of my favourite movies.
