@@ -44,8 +44,6 @@ export class ContentCardComponent {
   constructor() {
     this.myContentList = new ContentList(this.contentItem);
     this.myContentList.add
-    // after creating a setter function for items in ContentList, call that function to add my other 2 contentItems
-    // this.myContentList. 
   }
 
   getItems() {}
