@@ -18,7 +18,7 @@ export class ContentList {
         return this._items;
     }
 
-    set items(value: Content[]){
-        this._items = value;
+    set add(value: Content[]){
+        this.add = value;
     }
 }
