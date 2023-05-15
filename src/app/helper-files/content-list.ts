@@ -18,7 +18,7 @@ export class ContentList {
         return this._items;
     }
 
-    set add(value: Content[]){
-        this.add = value;
+    public add(value: Content){
+        const add = this.add;
     }
 }

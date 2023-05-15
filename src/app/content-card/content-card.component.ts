@@ -43,7 +43,8 @@ export class ContentCardComponent {
 
   constructor() {
     this.myContentList = new ContentList(this.contentItem);
-    this.myContentList.add
+    this.myContentList.add(this.contentItem2);
+    this.myContentList.add(this.contentItem3);
   }
 
   getItems() {}
