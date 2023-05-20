@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Content } from '../helper-files/content-interface';
 import { ContentList } from '../helper-files/content-list';
 
@@ -7,7 +7,9 @@ import { ContentList } from '../helper-files/content-list';
   templateUrl: './content-card.component.html',
   styleUrls: ['./content-card.component.scss']
 })
-export class ContentCardComponent {
+export class ContentCardComponent implements OnInit {
+  @Input() content: Content;
+
   contentItem:Content = {
     id: 1024,
     title: 'The Godfather Part 2',
@@ -51,5 +53,17 @@ export class ContentCardComponent {
   processContent ():void {
     this.myContentItems = this.myContentList.items;
     console.log(this.myContentItems);
+  }
+
+  ngOnInit(){
+    this.content = {
+      id: 1026,
+      title: 'Sunset Boulevard',
+      description: 'An aging silent film queen refuses to accept that her stardom has ended. She hires a young screenwriter to help set up her movie comeback. The screenwriter believes he can manipulate her, but he soon finds out he is wrong. The screenwriters ambivalence about their relationship and her unwillingness',
+      creator: 'Bily Wilder',
+      genre: 'Drama',
+      body: 'Good movie',
+      releaseDate: 1950
+    }
   }
 }

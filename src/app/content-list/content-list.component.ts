@@ -38,7 +38,37 @@ export class ContentListComponent implements OnInit {
     releaseDate: 1950
   };
 
+  contentItem4 = {
+    id: 1027,
+    title: 'American Psycho',
+    description: 'In New York City in 1987, a handsome, young urban professional, Patrick Bateman (Christian Bale), lives a second life as a gruesome serial killer by night. The cast is filled by the detective (Willem Dafoe), the fiance (Reese Witherspoon), the mistress (Samantha Mathis), the coworker (Jared Leto), and the secretary (Chloë Sevigny). This is a biting, wry comedy examining the elements that make a man a monster.',
+    creator: 'Mary Harron',
+    genre: 'Horror Comedy',
+    body: 'A modern day classic',
+    releaseDate: 2000
+  };
+
+  contentItem5 = {
+    id: 1028,
+    title: 'Blow Out',
+    description: 'While recording sound effects for a slasher flick, Jack Terri (John Travolta) stumbles upon a real-life horror: a car careening off a bridge and into a river. Jack jumps into the water and fishes out Sally (Nancy Allen) from the car, but the other passenger is already dead -- a governor intending to run for president. As Jack does some investigating of his tapes, and starts a perilous romance with Sally, he enters a tangled web of conspiracy that might leave him dead.',
+    creator: 'Brian De Palma',
+    genre: 'Thriller/Mystery',
+    body: 'Good movie',
+    releaseDate: 1981
+  };
+
+  contentItem6 = {
+    id: 1029,
+    title: 'No Country For Old Men',
+    description: 'While out hunting, Llewelyn Moss (Josh Brolin) finds the grisly aftermath of a drug deal. Though he knows better, he cannot resist the cash left behind and takes it with him. The hunter becomes the hunted when a merciless killer named Chigurh (Javier Bardem) picks up his trail. Also looking for Moss is Sheriff Bell (Tommy Lee Jones), an aging lawman who reflects on a changing world and a dark secret of his own, as he tries to find and protect Moss.',
+    creator: 'Joel Coen, Ethan Coen',
+    genre: 'Western',
+    body: 'Consistently compelling and entertaining throughout',
+    releaseDate: 2007
+  };
+
   ngOnInit(){
-    this.myContentArray = [this.contentItem, this.contentItem2, this.contentItem3]
+    this.myContentArray = [this.contentItem, this.contentItem2, this.contentItem3, this.contentItem4, this.contentItem5, this.contentItem6]
   }
 }
