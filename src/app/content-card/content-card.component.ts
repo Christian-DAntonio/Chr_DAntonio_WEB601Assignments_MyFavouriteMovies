@@ -57,12 +57,12 @@ export class ContentCardComponent implements OnInit {
 
   ngOnInit(){
     this.content = {
-      id: 1026,
-      title: 'Sunset Boulevard',
-      description: 'An aging silent film queen refuses to accept that her stardom has ended. She hires a young screenwriter to help set up her movie comeback. The screenwriter believes he can manipulate her, but he soon finds out he is wrong. The screenwriters ambivalence about their relationship and her unwillingness',
-      creator: 'Bily Wilder',
-      genre: 'Drama',
-      body: 'Good movie',
+      id: 0,
+      title: '',
+      description: '',
+      creator: '',
+      genre: '',
+      body: '`',
       releaseDate: 1950
     }
   }
