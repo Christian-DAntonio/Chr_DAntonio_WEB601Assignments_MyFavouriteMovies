@@ -68,7 +68,17 @@ export class ContentListComponent implements OnInit {
     releaseDate: 2007
   };
 
+  contentItem7 = {
+    id: 1030,
+    title: 'Full Mrtal Jacket',
+    description: 'Stanley Kubricks take on the Vietnam War follows smart-aleck Private Davis (Matthew Modine), quickly christened "Joker" by his foul-mouthed drill sergeant (R. Lee Ermey), and pudgy Private Lawrence (Vincent DOnofrio), nicknamed Gomer Pyle, as they endure the rigors of basic training. Though Pyle takes a frightening detour, Joker graduates to the Marine Corps and is sent to Vietnam as a journalist, covering -- and eventually participating in -- the bloody Battle of Hué.',
+    creator: 'Stanley Kubrick',
+    genre: 'War/Drama',
+    body: 'Great movie',
+    releaseDate: 1987
+  };
+
   ngOnInit(){
-    this.myContentArray = [this.contentItem, this.contentItem2, this.contentItem3, this.contentItem4, this.contentItem5, this.contentItem6]
+    this.myContentArray = [this.contentItem, this.contentItem2, this.contentItem3, this.contentItem4, this.contentItem5, this.contentItem6, this.contentItem7]
   }
 }
