@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Content } from '../helper-files/content-interface';
-import { ContentList } from '../helper-files/content-list';
+
 
 @Component({
   selector: 'app-content-card',
@@ -39,19 +39,19 @@ export class ContentCardComponent implements OnInit {
     body: 'Good movie',
     releaseDate: 1950
   }
-  myContentList: ContentList;
+ // myContentList: ContentList;
 
   myContentItems: Content[];
 
-  constructor() {
+  /* constructor() {
     this.myContentList = new ContentList(this.contentItem);
     this.myContentList.add(this.contentItem2);
     this.myContentList.add(this.contentItem3);
-  }
+  } */
 
   getItems() {}
   processContent ():void {
-    this.myContentItems = this.myContentList.items;
+   // this.myContentItems = this.myContentList.items;
     console.log(this.myContentItems);
   }
 
