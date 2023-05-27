@@ -1,5 +1,7 @@
 <p>content-list works!</p>
-<div class="contentItem" style="border:black;border-width:2px;border-style:solid;">
+<input [(ngModel)]="name"> My name is: {{ name | uppercase }}
+<p>My lowercase name is {{ name | lowercase }}</p>
+<!-- <div class="contentItem" style="border:black;border-width:2px;border-style:solid;">
     <h1>The Godfather Part 2</h1>
     <p>Description: The compelling sequel to "The Godfather," contrasting the life of Corleone father and son. Traces the problems of Michael Corleone (Al Pacino) in 1958 and that of a young immigrant Vito Corleone (Robert De Niro) in 1917s Hells Kitchen. Michael survives many misfortunes and Vito is introduced to a life of crime.</p>
     <p>Creator: Francis Ford Coppola</p>
@@ -46,5 +48,5 @@
     <p>Genre: Western</p>
     <p>Consistently compelling and entertaining throughout</p>
     <p>Release Date: 2007</p>
-</div>
-<app-content-card *ngFor="let content of myContentArray" [content]="content"></app-content-card>
+</div> -->
+<app-content-card *ngFor="let content of (myContentArray | movies)" [content]="content"></app-content-card>

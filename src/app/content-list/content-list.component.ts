@@ -7,6 +7,7 @@ import { Content } from '../helper-files/content-interface';
   styleUrls: ['./content-list.component.scss']
 })
 export class ContentListComponent implements OnInit {
+  name: string;
   myContentArray: Content[];
   contentItem = {
     id: 1024,
@@ -70,7 +71,7 @@ export class ContentListComponent implements OnInit {
 
   contentItem7 = {
     id: 1030,
-    title: 'Full Mrtal Jacket',
+    title: 'Full Metal Jacket',
     description: 'Stanley Kubricks take on the Vietnam War follows smart-aleck Private Davis (Matthew Modine), quickly christened "Joker" by his foul-mouthed drill sergeant (R. Lee Ermey), and pudgy Private Lawrence (Vincent DOnofrio), nicknamed Gomer Pyle, as they endure the rigors of basic training. Though Pyle takes a frightening detour, Joker graduates to the Marine Corps and is sent to Vietnam as a journalist, covering -- and eventually participating in -- the bloody Battle of Hué.',
     creator: 'Stanley Kubrick',
     genre: 'War/Drama',
