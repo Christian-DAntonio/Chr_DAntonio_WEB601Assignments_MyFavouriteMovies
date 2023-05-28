@@ -1,5 +1,6 @@
 <p>content-list works!</p>
-<input [(ngModel)]="name"> My name is: {{ name | uppercase }}
+<input [(ngModel)]="name"> Movie name is: {{ name | uppercase }}
+<input bindon-ngModel="name">
 <p>My lowercase name is {{ name | lowercase }}</p>
 <!-- <div class="contentItem" style="border:black;border-width:2px;border-style:solid;">
     <h1>The Godfather Part 2</h1>
@@ -50,5 +51,4 @@
     <p>Release Date: 2007</p>
 </div> -->
 <app-content-card *ngFor="let content of (myContentArray | movies)" [content]="content"></app-content-card>
-<app-content-card *ngFor="let content of"></app-content-card>
 <app-content-card *ngFor="let content of myContentArray" [content]="content"></app-content-card>
