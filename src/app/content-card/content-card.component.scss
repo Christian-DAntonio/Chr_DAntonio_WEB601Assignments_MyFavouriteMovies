@@ -1,7 +1,9 @@
 .contentCard {
-    border:black;border-width:1px;border-style:solid
+    border:black;border-width:1px;border-style:solid;
+    background-color: aqua;
 }
 
-.contentCard.h1 {
-    font-size: 10px;
+.contentCard.p.description {
+    font-size: 5px;
 }
+
