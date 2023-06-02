@@ -16,6 +16,7 @@ export class ContentListComponent implements OnInit {
     creator: 'Francis Ford Coppola',
     genre: 'Crime',
     body: 'Should be obivous enough as to why this one is here',
+    imgUrl: 'https://m.media-amazon.com/images/M/MV5BMWMwMGQzZTItY2JlNC00OWZiLWIyMDctNDk2ZDQ2YjRjMWQ0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg',
     releaseDate: 1974
   }
 
@@ -26,6 +27,7 @@ export class ContentListComponent implements OnInit {
     creator: 'Thomas Vinterberg',
     genre: 'Drama',
     body: 'This one is probably my favourite movie out of the three',
+    imgUrl: 'https://m.media-amazon.com/images/M/MV5BMTg2NDg3ODg4NF5BMl5BanBnXkFtZTcwNzk3NTc3Nw@@._V1_.jpg',
     releaseDate: 2012
   }
 
@@ -36,6 +38,7 @@ export class ContentListComponent implements OnInit {
     creator: 'Bily Wilder',
     genre: 'Drama',
     body: 'Good movie',
+    imgUrl: 'https://resizing.flixster.com/jASvWdyGN-hdWP61BVQk5njKUno=/206x305/v2/https://flxt.tmsimg.com/assets/p1187_p_v8_ai.jpg',
     releaseDate: 1950
   };
 

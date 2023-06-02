@@ -6,4 +6,5 @@ export interface Content {
     genre?: string;
     body: string;
     releaseDate: number;
+    imgUrl?: string;
 }
