@@ -82,4 +82,8 @@ export class ContentListComponent implements OnInit {
   ngOnInit(){
     this.myContentArray = [this.contentItem, this.contentItem2, this.contentItem3, this.contentItem4, this.contentItem5, this.contentItem6, this.contentItem7]
   }
+
+  searchFunction(){
+    this.myContentArray.find(value => value.title = this.name)
+  }
 }

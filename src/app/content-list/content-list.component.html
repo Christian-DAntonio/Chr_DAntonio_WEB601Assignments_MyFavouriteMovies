@@ -1,7 +1,8 @@
 <p>content-list works!</p>
-<input [(ngModel)]="name"> Movie name is: {{ name | uppercase }}
-<input bindon-ngModel="name">
-<p>My lowercase name is {{ name | lowercase }}</p>
+
+<input bindon-ngModel="name"><button (click)="searchFunction()">Search</button>
+
+<p>The Movie is {{ name | lowercase }}</p>
 <!-- <div class="contentItem" style="border:black;border-width:2px;border-style:solid;">
     <h1>The Godfather Part 2</h1>
     <p>Description: The compelling sequel to "The Godfather," contrasting the life of Corleone father and son. Traces the problems of Michael Corleone (Al Pacino) in 1958 and that of a young immigrant Vito Corleone (Robert De Niro) in 1917s Hells Kitchen. Michael survives many misfortunes and Vito is introduced to a life of crime.</p>
@@ -50,5 +51,7 @@
     <p>Consistently compelling and entertaining throughout</p>
     <p>Release Date: 2007</p>
 </div> -->
-<app-content-card *ngFor="let content of (myContentArray | movies)" [content]="content"></app-content-card>
-<app-content-card *ngFor="let content of myContentArray" [content]="content"></app-content-card>
+<app-content-card *ngFor="let content of (myContentArray | movies:'Drama')" [content]="content"></app-content-card>
+<app-content-card *ngFor="let content of (myContentArray | movies:'')" [content]="content"></app-content-card>
+<app-content-card *ngFor="let content of (myContentArray | movies:'Crime')" [content]="content"></app-content-card>
+

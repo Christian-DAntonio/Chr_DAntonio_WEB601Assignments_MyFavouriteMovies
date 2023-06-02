@@ -6,9 +6,8 @@ import { Content } from './helper-files/content-interface';
 })
 export class MoviesPipe implements PipeTransform {
 
-  transform(contentList: Content[]) {
-    return contentList.filter(c => c.title != null ? 
-      c.title.length : null);
+  transform(contentList: Content[], typeToFilter: string) {
+    return contentList.filter(c => c.genre === typeToFilter)
   }
 
 }

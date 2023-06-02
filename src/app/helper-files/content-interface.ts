@@ -3,7 +3,7 @@ export interface Content {
     title: string;
     description: string;
     creator: string;
-    genre: string;
+    genre?: string;
     body: string;
     releaseDate: number;
 }
