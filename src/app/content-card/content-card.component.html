@@ -4,10 +4,9 @@
     <div>{{content.description}}</div>
     <div>{{content.creator}}</div>
     <div appHoverAffect [colour]='"blue"'>{{content.genre}}</div>
-    <div>{{content.body}}</div>
+    <div *ngIf='content.body'>{{content.body}}</div>
     <div>{{content.releaseDate}}</div>
     <img src="{{content.imgUrl}}" style="width:200px;">
 </div>
-
 
 <!-- <img src={{contentItem.imgUrl}}> -->
