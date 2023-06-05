@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Input, OnInit, HostListener } from '@angular/core';
+import { Directive, ElementRef, Host, HostListener, OnInit, Input } from '@angular/core';
 
 @Directive({
   selector: '[appHoverAffect]'
@@ -6,14 +6,20 @@ import { Directive, ElementRef, Input, OnInit, HostListener } from '@angular/cor
 export class HoverAffectDirective implements OnInit {
   @Input () colour: string;
   constructor(private elm: ElementRef) { 
+    this.elm.nativeElement.style.backgroundColor = 'yellow';
   }
-  @HostListener('click') onClick() {
-    this.highlightMe(this.colour);
+  @HostListener('mouseenter') onMouseEnter() {
+    this.highlight('yellow');
   }
-  private highlightMe(highlightColour: string) {
-    this.elm.nativeElement.style.backgroundColor = highlightColour || 'green';
+
+  @HostListener('mouseleave') onMouseLeave() {
+    this.highlight('');
   }
-  ngOnInit(): void{
-    this.elm.nativeElement.style.backgroundColor = this.colour || "green";
+
+  private highlight(colour: string) {
+    this.elm.nativeElement.style.backgroundColor = colour;
   }
+   ngOnInit(): void{
+    this.elm.nativeElement.style.backgroundColor = this.colour || "";
+  } 
 }
