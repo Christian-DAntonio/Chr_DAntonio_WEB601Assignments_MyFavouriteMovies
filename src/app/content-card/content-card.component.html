@@ -3,11 +3,11 @@
     <h1 appHoverAffect>{{content.title}}</h1>
     <div appHoverAffect>{{content.description}}</div>
     <div appHoverAffect>{{content.creator}}</div>
-    <div appHoverAffect>{{content.genre}}</div>
+    <div appHoverAffect [affectName]="'underline'">{{content.genre}}</div>
     <div *ngIf="content.body" appHoverAffect>
         {{content.body}}
     </div>
-    <div appHoverAffect>{{content.releaseDate}}</div>
+    <div appHoverAffect [affectName]="'bold'">{{content.releaseDate}}</div>
     <img src="{{content.imgUrl}}" style="width:200px;">
 </div>
 
