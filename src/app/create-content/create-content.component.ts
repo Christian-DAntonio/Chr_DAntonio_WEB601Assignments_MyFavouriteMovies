@@ -1,3 +1,4 @@
+import { Content } from '../helper-files/content-interface';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class CreateContentComponent {
 
+clickEvent() {
+throw new Error('Method not implemented.');
 }
+
+}
+
