@@ -17,7 +17,8 @@ addBand(): void{
 }
 }
 
-var promise = new Promise((success, fail) =>{
+
+let promise = new Promise((success, fail) =>{
   let testPass = true;
   if(testPass){
     success("Success was achieved!");
@@ -25,4 +26,10 @@ var promise = new Promise((success, fail) =>{
   else{
     fail("Failure :(")
   }
+  promise.then(successResult =>
+    console.log(successResult))
+    .catch(failResult => console.log(failResult));
 })
+
+
+
