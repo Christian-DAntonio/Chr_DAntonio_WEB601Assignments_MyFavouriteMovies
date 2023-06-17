@@ -81,6 +81,15 @@ export class ContentListComponent implements OnInit {
     body: 'Great movie',
     releaseDate: 1987
   };
+  bandList: any;
+
+  addBandToList(newBandFromChild: Content) {
+    this.bandList.push(newBandFromChild);
+
+    this.bandList = Object.assign([], this.bandList);
+
+    this.bandList = [...this.bandList];
+  }
 
   ngOnInit(){
     this.myContentArray = [this.contentItem, this.contentItem2, this.contentItem3, this.contentItem4, this.contentItem5, this.contentItem6, this.contentItem7]
