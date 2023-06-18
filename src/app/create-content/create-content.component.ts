@@ -15,6 +15,7 @@ newBandItem: Content;
 addBand(): void{
   this.newBandEvent.emit(this.newBandItem);
 }
+
 }
 
 
@@ -31,5 +32,17 @@ let promise = new Promise((success, fail) =>{
     .catch(failResult => console.log(failResult));
 })
 
+let getStuff = async function () {
+  return "stuff";
+}
 
+let getTheSameStuff = function () {
+  return Promise.resolve("stuff");
+}
 
+let getAllTheStuff = async () => {
+  const theFirstStuff = await getStuff();
+  const theSecondStuff = await getTheSameStuff();
+
+  return await [theFirstStuff, theSecondStuff];
+}
